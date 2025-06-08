@@ -1,0 +1,316 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flash Energy - Eduardo Samuel - Serviços Elétricos Profissionais</title>
+    <meta name="description" content="Serviços elétricos profissionais: afiação elétrica, instalação de ar-condicionado e elétrica geral">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">E</div>
+                    <div class="logo-text">
+                        <h1>Flash Energy</h1>
+                        <p>Serviços Elétricos Profissionais</p>
+                    </div>
+                </div>
+                
+                <nav class="nav-desktop">
+                    <a href="#servicos">Serviços</a>
+                    <a href="#atendimento">Atendimento</a>
+                    <a href="#contato">Contato</a>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>(38) 99993-7971</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>contato@eletricista.com</span>
+                        </div>
+                    </div>
+                </nav>
+                
+                <button class="btn-mobile" onclick="openWhatsApp()">
+                    Contato
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Serviços Elétricos
+                    <span class="text-highlight">Profissionais</span>
+                </h1>
+                
+                <p class="hero-description">
+                    Soluções completas em instalações elétricas, ar-condicionado e afiação elétrica. 
+                    Qualidade garantida e atendimento personalizado para sua segurança.
+                </p>
+                
+                <div class="professional-card">
+                    <h2>Eduardo Samuel - Eletricista Profissional</h2>
+                    <div class="contact-grid">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>(38) 99993-7971</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>flashenergyservicos@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="openWhatsApp()">
+                        <i class="fab fa-whatsapp"></i>
+                        Entre em Contato
+                    </button>
+                    <button class="btn btn-outline" onclick="scrollToServices()">
+                        Ver Serviços
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicos" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nossos Serviços</h2>
+                <p>Oferecemos soluções completas em serviços elétricos com qualidade profissional e garantia de segurança.</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Afiação Elétrica</h3>
+                    <p>Serviços especializados em afiação e manutenção de equipamentos elétricos com precisão e qualidade.</p>
+                    <ul class="service-features">
+                        <li>Afiação de ferramentas elétricas</li>
+                        <li>Manutenção preventiva</li>
+                        <li>Calibração de equipamentos</li>
+                        <li>Testes de segurança</li>
+                    </ul>
+                    <button class="btn btn-service" onclick="openWhatsApp()">
+                        Solicitar Orçamento
+                    </button>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-wind"></i>
+                    </div>
+                    <h3>Instalação de Ar-Condicionado</h3>
+                    <p>Instalação completa de sistemas de ar-condicionado residencial e comercial com garantia.</p>
+                    <ul class="service-features">
+                        <li>Instalação residencial e comercial</li>
+                        <li>Manutenção e limpeza</li>
+                        <!--li>Recarga de gás</li-->
+                        <li>Diagnóstico e reparo</li>
+                    </ul>
+                    <button class="btn btn-service" onclick="openWhatsApp()">
+                        Solicitar Orçamento
+                    </button>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cog"></i>
+                    </div>
+                    <h3>Elétrica Geral</h3>
+                    <p>Todos os tipos de serviços elétricos para sua casa ou empresa com segurança garantida.</p>
+                    <ul class="service-features">
+                        <li>Instalações elétricas completas</li>
+                        <li>Reparo em tomadas e interruptores</li>
+                        <li>Quadros elétricos</li>
+                        <li>Iluminação LED</li>
+                    </ul>
+                    <button class="btn btn-service" onclick="openWhatsApp()">
+                        Solicitar Orçamento
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Areas Section -->
+    <section id="atendimento" class="service-areas">
+        <div class="container">
+            <div class="section-header">
+                <h2>Locais de Atendimento</h2>
+                <p>Atendemos com rapidez e qualidade profissional.</p>
+            </div>
+            
+            <div class="areas-grid">
+                <div class="area-card">
+                    <div class="area-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Montes Claros</h3>
+                    <p>Atendimento completo na cidade e região com equipe especializada.</p>
+                    <ul class="area-features">
+                        <li>Atendimento 24h para emergências</li>
+                        <li>Equipe local qualificada</li>
+                        <li>Orçamento gratuito</li>
+                    </ul>
+                </div>
+
+                <div class="area-card">
+                    <div class="area-icon">
+                        <i class="fas fa-city"></i>
+                    </div>
+                    <h3>Belo Horizonte</h3>
+                    <p>Serviços elétricos profissionais na capital mineira.</p>
+                    <ul class="area-features">
+                        <li>Cobertura completa da cidade</li>
+                        <li>Atendimento rápido</li>
+                        <li>Profissionais certificados</li>
+                    </ul>
+                </div>
+
+                <div class="area-card">
+                    <div class="area-icon">
+                        <i class="fas fa-globe-americas"></i>
+                    </div>
+                    <h3>Região Metropolitana</h3>
+                    <p>Atendemos toda a região metropolitana de Belo Horizonte.</p>
+                    <ul class="area-features">
+                        <li>Contagem, Betim, Nova Lima</li>
+                        <li>Ribeirão das Neves, Sabará</li>
+                        <li>E demais cidades da região</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="state-info">
+                <div class="state-card">
+                    <i class="fas fa-map"></i>
+                    <h3>Minas Gerais</h3>
+                    <p>Atuamos em todo o estado de Minas Gerais, levando qualidade e segurança em serviços elétricos para sua residência ou empresa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Entre em Contato</h2>
+                <p>Precisa de um orçamento? Fale comigo agora mesmo!</p>
+            </div>
+            
+            <div class="contact-card">
+                <div class="contact-header">
+                    <h3>Eduardo Samuel</h3>
+                    <p>Eletricista Profissional Certificado</p>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-methods">
+                        <div class="contact-method phone">
+                            <div class="method-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="method-info">
+                                <h4>Telefone</h4>
+                                <p class="phone-number">(38) 99993-7971</p>
+                                <small>Disponível 24h para emergências</small>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method email">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-info">
+                                <h4>Email</h4>
+                                <p class="email-address">flashenergyservicos@gmail.com</p>
+                                <small>Resposta em até 2 horas</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-actions">
+                        <h3>Solicite seu Orçamento</h3>
+                        <button class="btn btn-primary btn-large" onclick="openWhatsApp()">
+                            <i class="fab fa-whatsapp"></i>
+                            Entre em Contato
+                        </button>
+                        <button class="btn btn-outline btn-large" onclick="sendEmail()">
+                            <i class="fas fa-envelope"></i>
+                            Enviar Email
+                        </button>
+                        <p class="contact-note">
+                            Atendimento rápido e orçamento gratuito
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="logo-icon">E</div>
+                        <div class="logo-text">
+                            <h3>Flash Energy</h3>
+                            <p>Eduardo Samuel</p>
+                        </div>
+                    </div>
+                    <p>Serviços elétricos profissionais com qualidade e segurança garantidas.</p>
+                </div>
+                
+                <div class="footer-services">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li>Afiação Elétrica</li>
+                        <li>Instalação de Ar-Condicionado</li>
+                        <li>Elétrica Geral</li>
+                        <li>Manutenção Preventiva</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contato</h4>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>(38) 99993-7971</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>flashenergyservicos@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2024 Flash Energy - Eduardo Samuel. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
